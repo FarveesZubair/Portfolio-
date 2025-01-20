@@ -1,0 +1,110 @@
+/* Reset and general styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+p {
+  text-align: center;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list li {
+  margin: 0 10px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.nav-list a:hover {
+  color: #00bcd4;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-toggle .bar {
+  background: #fff;
+  height: 3px;
+  margin: 3px 0;
+  width: 25px;
+}
+
+/* Section styling */
+section {
+  padding: 60px 20px;
+}
+section#about {
+  background: #f4f4f4;
+}
+section#projects {
+  background: #e2e2e2;
+}
+.project {
+  margin: 20px 0;
+  text-align: center;
+}
+section#contact {
+  background: #d4d4d4;
+}
+
+/* Footer styling */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .nav-list li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
